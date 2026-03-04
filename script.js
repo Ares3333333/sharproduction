@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             requestAnimationFrame(animateCursor);
         }
         animateCursor();
-        document.querySelectorAll('a, button, .case, .journal-card, .price-card, .member, input, textarea').forEach(el => {
+        document.querySelectorAll('a, button, .case, .journal-card, .price-card, .member, input, textarea, .close-case').forEach(el => {
             el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
             el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
         });
